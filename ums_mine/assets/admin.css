@@ -1,0 +1,165 @@
+/* 🌙 Dark Mode Background */
+body {
+    background-color: #0a0a0a;
+    color: cyan;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🛠️ Admin Header */
+.admin-header {
+    background: #111;
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    color: cyan;
+    border-bottom: 2px solid cyan;
+}
+
+/* 📜 Sidebar Styling */
+.admin-sidebar {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 220px;
+    height: 100%;
+    background: #222;
+    padding-top: 20px;
+    border-right: 2px solid cyan;
+}
+
+.admin-sidebar h3 {
+    text-align: center;
+    color: cyan;
+}
+
+.admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-sidebar ul li {
+    padding: 12px;
+    text-align: center;
+}
+
+.admin-sidebar ul li a {
+    color: cyan;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.admin-sidebar ul li a:hover {
+    background: cyan;
+    color: black;
+    font-weight: bold;
+}
+
+/* 🖥️ Center Content */
+.dashboard {
+    margin-left: 230px;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 80px; /* ✅ Add padding to prevent footer overlap */
+}
+/* 📌 Admin Operations Panel */
+.admin-operations {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+/* 🚀 Buttons */
+.admin-options button {
+    background: cyan;
+    color: black;
+    padding: 12px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.admin-options button:hover {
+    background: black;
+    color: cyan;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+/* 📜 Student Table */
+.student-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.student-table th, .student-table td {
+    padding: 10px;
+    border: 1px solid cyan;
+}
+
+.student-table th {
+    background: black;
+    color: cyan;
+}
+
+.student-table td {
+    background: #111;
+    color: cyan;
+}
+
+/* 📝 Admin Form */
+.admin-form {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px cyan;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+}
+
+.admin-form input {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background: black;
+    color: cyan;
+    border-bottom: 2px solid cyan;
+    outline: none;
+}
+
+.admin-form button {
+    background: cyan;
+    color: black;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-form button:hover {
+    background: black;
+    color: cyan;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+/* 📌 Footer */
+.admin-footer {
+    background: #111;
+    color: cyan;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid cyan;
+}

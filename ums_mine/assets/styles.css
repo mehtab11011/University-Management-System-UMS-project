@@ -1,0 +1,139 @@
+/* ==== GLOBAL STYLES ==== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ==== HEADER ==== */
+.header {
+    background: linear-gradient(45deg, #00c3ff, #0066ff);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
+    text-transform: uppercase;
+}
+
+/* ==== LAYOUT ==== */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* ==== SIDEBAR ==== */
+.sidebar {
+    width: 250px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    box-shadow: 3px 0px 10px rgba(0, 255, 255, 0.2);
+    border-right: 3px solid cyan;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: cyan;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(0, 255, 255, 0.1);
+    text-shadow: 0px 0px 8px cyan;
+    transition: all 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: cyan;
+    color: #000;
+    text-shadow: none;
+}
+
+/* ==== MAIN CONTENT ==== */
+.content {
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Orbitron', sans-serif;
+    color: cyan;
+    text-shadow: 0px 0px 15px cyan;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Glowing text effect */
+@keyframes glow {
+    0% { text-shadow: 0px 0px 10px cyan; }
+    100% { text-shadow: 0px 0px 20px cyan; }
+}
+
+p {
+    font-size: 18px;
+    color: #bdbdbd;
+    margin-top: 10px;
+}
+
+/* ==== BUTTON ==== */
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #00c3ff, #0066ff);
+    color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px cyan;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #00c3ff;
+    box-shadow: 0px 0px 25px cyan;
+    transform: scale(1.05);
+}
+
+/* ==== FOOTER ==== */
+.footer {
+    background: #1a1a1a;
+    color: cyan;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -4px 10px rgba(0, 255, 255, 0.2);
+    font-size: 14px;
+}
+
+/* ==== RESPONSIVE DESIGN ==== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: 3px solid cyan;
+    }
+}
