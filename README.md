@@ -1,6 +1,6 @@
-# read in code form 
+ read in code form 
 
-University Management System (UMS)
+#University Management System (UMS)
 Project Description
 The University Management System (UMS) is a web-based application designed to help universities manage student records and announcements efficiently.
 
